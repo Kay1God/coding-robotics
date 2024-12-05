@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Coding and Robotics Aftercare Club Logo">
+        </div>
+        <nav>
+            <ul>
+           <li><a href="homepage.html">Home</a></li>
+                <li><a href="Schedule.html">Schedule</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Register</h1>
+        <form action="submit-registration.php" method="POST">
+    <input type="hidden" name="form-name" value="registration">
+
+    <label for="parent-name">Parent/Guardian Name:</label>
+    <input type="text" id="parent-name" name="parent-name" required>
+
+    <label for="child-name">Child's Name:</label>
+    <input type="text" id="child-name" name="child-name" required>
+
+    <label for="grade">Grade:</label>
+    <select id="grade" name="grade" required>
+        <option value="4">Grade 4</option>
+        <option value="5">Grade 5</option>
+        <option value="6">Grade 6</option>
+        <option value="7">Grade 7</option>
+    </select>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <button type="submit">Register Now</button>
+</form><form class="registration-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+            <label for="parent-contact">Parent's Contact:</label>
+            <input type="tel" id="parent-contact" name="parent-contact" placeholder="Enter phone number" required>
+
+            <label for="program">Preferred Program:</label>
+            <select id="program" name="program">
+                <option value="coding">Coding</option>
+                <option value="robotics">Robotics</option>
+                <option value="drones">Drone Technology</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Coding and Robotics Aftercare Club</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Workshop Schedule</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pricing">
+        <h1>Pricing for Workshops</h1>
+        <div class="pricing-options">
+            <div class="pricing-item">
+                <h2>Single Session</h2>
+                <p>$10 per session</p>
+                <p>Join a single session and learn specific skills for that day.</p>
+            </div>
+            <div class="pricing-item">
+                <h2>Weekly Package</h2>
+                <p>$30 per week</p>
+                <p>Access all workshops for a week, with flexible scheduling.</p>
+            </div>
+            <div class="pricing-item">
+                <h2>Monthly Package</h2>
+                <p>$100 per month</p>
+                <p>Get full access to all workshops for an entire month.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 After-School Workshops. Contact us: [Your Contact Info]</p>
+    </footer>
+</body>
+</html>
+
+<!-- CSS -->
+<style>
+    .pricing {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .pricing-options {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .pricing-item {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 200px;
+        text-align: center;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .pricing-options {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>

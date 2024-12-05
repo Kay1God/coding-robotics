@@ -1,0 +1,251 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3f, #0074d9);
+    color: #ffffff;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #00aaff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001f3f;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #0074d9;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    color: #7FDBFF;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #00aaff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #001f3f;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+.schedule-table, .pricing-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #02274f;
+    color: #ffffff;
+    text-align: left;
+}
+
+.schedule-table th, .pricing-table th {
+    background-color: #0a447a;
+    padding: 10px;
+}
+
+.schedule-table td, .pricing-table td {
+    padding: 10px;
+    border: 1px solid #02274f;
+}
+
+.registration-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #02274f;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.registration-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.registration-form input, .registration-form select, .registration-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.registration-form button {
+    background-color: #0a447a;
+    color: white;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #086db1;
+}
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.pricing-card {
+    background-color: #02274f;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 200px;
+}
+
+.pricing-card:hover {
+    transform: scale(1.1);
+    background-color: #086db1;
+}
+.resource-card {
+    background-color: #02274f;
+    color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card a {
+    color: #0a74da;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resource-card:hover {
+    background-color: #086db1;
+}
+.contact-form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #02274f;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #0a447a;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #086db1;
+}
+
+.map-container {
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+}
