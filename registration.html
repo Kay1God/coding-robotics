@@ -13,7 +13,7 @@
         </div>
         <nav>
             <ul>
-             <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="Schedule.html">Schedule</a></li>
                 <li><a href="registration.html">Register</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
@@ -24,7 +24,10 @@
     </header>
     <main>
         <h1>Register</h1>
-        <form class="registration-form">
+        <form action="/" method="POST" data-netlify="true" name="registration">
+            <!-- Hidden input field to capture the form name -->
+            <input type="hidden" name="form-name" value="registration">
+
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
@@ -36,10 +39,10 @@
 
             <label for="program">Preferred Program:</label>
             <select id="program" name="program">
-                <option value="coding">Grade 4</option>
-                <option value="robotics">Grade 5</option>
-                <option value="drones">Grade 6</option>
-				<option value="drones">Grade 7</option>
+                <option value="coding basics">Grade 4</option>
+                <option value="coding basics">Grade 5</option>
+                <option value="coding advance">Grade 6</option>
+                <option value="coding advance">Grade 7</option>
             </select>
 
             <button type="submit">Submit</button>
